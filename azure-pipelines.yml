@@ -7,8 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: "vs2017-win2016"
-
+  name: 'MyAgentPool'
+  demands:
+  - npm
 variables:
   buildConfiguration: 'Release'
 
