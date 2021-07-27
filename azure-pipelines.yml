@@ -6,10 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
+pool: 'MyAgentPool'
 variables:
   buildConfiguration: 'Release'
 
